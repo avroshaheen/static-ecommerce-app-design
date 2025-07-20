@@ -1,0 +1,230 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+}
+/* -------------------------------------------------------------------------- */
+/*                               Reusable Items                               */
+/* -------------------------------------------------------------------------- */
+section {
+  padding: 4rem 6rem;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   Header                                   */
+/* -------------------------------------------------------------------------- */
+header {
+  padding: 1rem 5rem;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  border: 1px solid #dddddd57;
+}
+.logo a{
+  font-size: 1.5rem;
+  color: #5c5e5d;
+  text-decoration: none;
+  font-weight: 700;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-link {
+  list-style: none;
+  margin: 0 1rem;
+}
+.nav-link a {
+  color: #4a4b4a;
+  font-weight: 500;
+  font-size: 16px;
+  text-decoration: none;
+  transition: 0.4s ease-in-out;
+}
+.nav-link a:hover {
+  color: #878887;
+}
+/* -------------------------------------------------------------------------- */
+/*                                 Influencer                                 */
+/* -------------------------------------------------------------------------- */
+.influencer, .featured-products {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 4rem;
+  align-items: center;
+}
+.influencer-texts, .featured-texts {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 45%;
+}
+.influencer-title, .featured-title {
+  font-size: 3.2rem;
+  color: #86274d;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.influencer-subtitle, .featured-subtitle {
+  font-size: 14px;
+  color: #5a5a5a;
+  font-weight: 600;
+}
+.booking-button, .featured-button {
+  background: #e80062;
+  color: #fff;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+  width: 220px;
+  transition: background-color 0.3s ease-in-out;
+}
+.booking-button:hover, .featured-button:hover {
+  background: rgb(196, 2, 82);
+}
+.influencer-img, .featured-img {
+  background-repeat: no-repeat;
+  /* background-position: right; */
+  height: 400px;
+}
+.image-st {
+  float: right;
+}
+/* -------------------------------------------------------------------------- */
+/*                                   Brands                                   */
+/* -------------------------------------------------------------------------- */
+.brands {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-block: 4rem;
+  gap: 2.5rem;
+}
+.brands img {
+  width: 80px;
+  height: 80px;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+.brands img:hover {
+  transform: scale(1.1);
+}
+/* -------------------------------------------------------------------------- */
+/*                               Product section                              */
+/* -------------------------------------------------------------------------- */
+.products {
+  padding: 4rem 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+}
+.products-heading {
+  color: #4d4646;
+  font-size: 2rem;
+}
+.product-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  padding-inline: 4rem;
+}
+.product-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.product-details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px 0;
+}
+.product-price {
+  font-size: 1.5rem;
+}
+.more-products {
+  outline: 0;
+  align-self: end;
+  font-size: 1rem;
+  border: 0;
+  background: #fff;
+  padding: 2rem 4.8rem;
+  color: #86274d;
+  transition: 0.4s ease-in-out;
+  cursor: pointer;
+}
+.more-products:hover {
+  color: #74216d;
+  transform: scale(1.1);
+}
+/* -------------------------------------------------------------------------- */
+/*                            Featured Products                               */
+/* -------------------------------------------------------------------------- */
+.featured-products {
+  padding: 4rem;
+  display: flex;
+}
+/* -------------------------------------------------------------------------- */
+/*                                   Footer                                   */
+/* -------------------------------------------------------------------------- */
+footer {
+  background-color: #270f49;
+  padding: 2rem;
+  text-align: center;
+  color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+footer a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  background: #ee05952c;
+  border: 1px solid #724fa1;
+}
+.social-links i {
+  font-size: 1.5rem;
+  color: #fff;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+.social-links i:hover {
+  color: #aa9bcc;
+}
